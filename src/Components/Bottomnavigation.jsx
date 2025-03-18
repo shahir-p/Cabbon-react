@@ -21,7 +21,7 @@ const BottomNavigation = ({ height, width }) => {
       className="bottombarIcons d-flex justify-content-evenly align-items-center bg-white"
       style={{
         width: `${width}px`,
-        height: `${height * 0.08}px`,
+        height: `${height * 0.1}px`,
         position: 'fixed',
         bottom: 0,
         backgroundColor: '#fff',
