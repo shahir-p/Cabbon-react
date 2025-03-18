@@ -23,9 +23,7 @@ const HomePage = () => {
     }, []);
     return (
         <>
-        <h1>Screen Dimensions</h1>
-        <p>Width: {width}px</p>
-        <p>Height: {height}px</p>
+        <div className='d-flex flex-column'> Home</div>
         </>
         
     )
