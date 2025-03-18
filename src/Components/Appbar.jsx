@@ -27,10 +27,10 @@ const Appbar = () => {
     <span className='title' style={{paddingLeft:"20px",fontSize:"20px",fontWeight:"500"}}>Home</span>
     <div className='appbarIcons d-flex column-gap-3 me-3'>
     <div className="icons" style={{width:`30px`,height:`30px`,}}>
-        <img src="../src/assets/icons/qr.png" alt="" width={"100%"} height={"100%"} />
+        <img src="./src/assets/icons/qr.png" alt="" width={"100%"} height={"100%"} />
     </div>
     <div className="icons" style={{width:`30px`,height:`30px`,}}>
-        <img src="../" alt="" width={"100%"} height={"100%"} />
+        <img src="./src/assets/icons/user.png" alt="" width={"100%"} height={"100%"} />
     </div>
    
     </div>
