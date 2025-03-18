@@ -7,11 +7,14 @@ const Appbar = ({ height, width }) => {
     return (
         <>
             <div
-                className="appbar d-flex justify-content-between align-items-center"
+                className="appbar d-flex justify-content-between align-items-center bg-white"
                 style={{
                     height: `${height * 0.1}px`,
                     width: `${width}px`,
                     boxShadow: "0px 0px 5px black",
+                    position: 'fixed',
+                    top: 0,
+                    zIndex:1000
                 }}
             >
                 <div className='d-flex justify-content-between align-items-center'> 
