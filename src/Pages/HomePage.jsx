@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import servicebg from '../assets/service bg.png'
 import paymentbg from '../assets/paymentbg.png'
 import todaybg from '../assets/today bg.png'
-import { Link } from 'react-router-dom';
+
 
 
 
