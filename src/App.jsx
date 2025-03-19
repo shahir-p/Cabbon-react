@@ -35,9 +35,9 @@ const App = () => {
       <div>
         <Appbar height={height} width={width} />
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/service" element={<ServicePage />} />
-          <Route path="/payment" element={<PaymentPage />} />
+          <Route path="/" element={<HomePage height={height} width={width} />} />
+          <Route path="/service" element={<ServicePage height={height} width={width} />} />
+          <Route path="/payment" element={<PaymentPage height={height} width={width} />} />
         </Routes>
         <BottomNavigation height={height} width={width}/>
         {/* <BottomNavigation height={height} width={width} /> */}
