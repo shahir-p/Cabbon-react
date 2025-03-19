@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
-import servicebg from '../assets/service bg.png'
+import servicebg from '../assets/service bg1.png'
 import paymentbg from '../assets/paymentbg.png'
 import todaybg from '../assets/today bg.png'
 
@@ -20,7 +20,7 @@ const HomePage = ({ height, width }) => {
                     <div className='d-flex justify-content-center mt-4'><span style={{ fontSize: "20px", fontWeight: "600" }}>Qatar auditoruim</span></div>
                 </div>
                 <span style={{ marginLeft: "10px", fontSize: "18px", fontWeight: "500" }}>Overview</span>
-                <div className='service ' style={{ height: `${height * 0.2}px`, margin: "10px", marginTop: "10px", borderRadius: "10px", border: "1px solid", padding: "10px" , backgroundImage: `url(${servicebg})`,backgroundSize: 'cover',backgroundRepeat: 'no-repeat',}}>
+                <div className='service ' style={{ height: `${height * 0.2}px`, margin: "10px", marginTop: "10px", borderRadius: "10px", border: "1px solid", padding: "10px" , backgroundImage: `url(${servicebg})`,backgroundSize: 'cover',backgroundRepeat: 'no-repeat', backgroundPosition:" right center"}}>
                     <div className=''> <span style={{ fontSize: "18px", fontWeight: "600" }}>Service</span>
                         <span style={{ color: "rgba(50, 168, 82)", fontSize: "16px", fontWeight: "500" }}></span>
                     </div>
