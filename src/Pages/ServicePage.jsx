@@ -11,15 +11,12 @@ const ServicePage = ({ height, width }) => {
   const handleShow = () => setShow(true);
 
   return (
-    <div className='home d-flex flex-column ' style={{ width: `${width}px`, marginTop: `${height * 0.1 + 10}px`, padding: "5px" }}>
+    <div className='home d-flex flex-column ' style={{ width: `${width}px`, marginTop: `${height * 0.1 + 10}px`, padding: "10px 20px" }}>
       <h5>Services</h5>
-      <div className='list d-flex justify-content-evenly align-items-center mb-2' style={{ height: `${height * 0.07}px`, width: `${width - 10}px`, border: "1px solid", borderRadius: "10px", fontSize: "13px" }} onClick={handleShow}>
-        <span>1.</span>
-        <span>10-02-25</span>
+      <div className='list d-flex justify-content-between align-items-center mb-2 ' style={{ height: `${height * 0.08}px`, width: `${width - 40}px`, border: "1px solid", borderRadius: "10px", fontSize: "13px",padding:"0px 20px" }} onClick={handleShow}>
+        <span>1</span>
+        <span>10-02-2025</span>
         <span>Qatar Auditoruim</span>
-        <span style={{ color: "rgba(50, 168, 82)", }}>08:30 am</span>
-        <span style={{ color: "rgba(191, 48, 48)", }}>04:30 pm</span>
-        <span><i class="fa-solid fa-triangle-exclamation text-warning" ></i></span>
       </div>
       <Modal show={show} onHide={handleClose} centered>
         <Modal.Header closeButton>
