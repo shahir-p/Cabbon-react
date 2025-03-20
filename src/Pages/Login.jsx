@@ -10,7 +10,7 @@ const Login = ({ height, width }) => {
   return (
     <>
       <div className='d-flex flex-column justify-content-center align-items-center' style={{ height: `${height}px`, widows: `${width}px` }}>
-        <img className='logo ' src={logo} style={{ width: `${width * 0.4}px`, height: `${height * 0.2}px`, }} />
+        <img className='logo ' src={logo} style={{ width:`100px`, height: `100px`, }} />
         <h3 className='mb-5 ' style={{ fontFamily: "Joan, serif" }}>CABBON</h3>
       <div className='border border-secondary rounded p-3 d-flex flex-column  justify-content-center align-items-center'>
       <h3 className='mb-5 ' style={{ }}>Log In</h3>
