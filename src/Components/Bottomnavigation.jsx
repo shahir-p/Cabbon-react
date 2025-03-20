@@ -6,7 +6,7 @@ const BottomNavigation = ({ height, width }) => {
   const navigate = useNavigate();
 
   const tabs = [
-    { id: 'home', label: 'Home', icon: 'fa-solid fa-house', route: '/' },
+    { id: 'home', label: 'Home', icon: 'fa-solid fa-house', route: '/home' },
     { id: 'service', label: 'Service', icon: 'fa-solid fa-bell-concierge', route: '/service' },
     { id: 'payment', label: 'Payment', icon: 'fa-solid fa-credit-card', route: '/payment' },
   ];
