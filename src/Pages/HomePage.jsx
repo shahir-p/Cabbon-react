@@ -12,12 +12,13 @@ const HomePage = ({ height, width }) => {
 
     return (
         <>
-            <div className='home d-flex flex-column ' style={{ width: `${width}px`, height: `${height}px`,paddingLeft:"10px",paddingRight:"10px" }}>
-                <div style={{ marginTop: `${height * 0.1 + 15}px`,}}>
+            <div className='home d-flex flex-column ' style={{ width: `${width}px`, height: `${height}px`, paddingLeft: "10px", paddingRight: "10px" }}>
+                <div style={{ marginTop: `${height * 0.1 + 15}px`, }}>
                     {/* <img src={profile} alt="" width={"50px"} height={"0px"} /> */}
                     <span style={{ paddingLeft: "10px", fontSize: "18px" }}>Welcome Shahir ,</span>
 
-                </div>                <div className='today ' style={{
+                </div>
+                <div className='today ' style={{
                     height: `${height * 0.18}px`, margin: "10px", borderRadius: "10px", border: "1px solid", padding: "10px", backgroundImage: `url(${todaybg})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: "right"
                 }}>
                     <div className=' d-flex justify-content-between'> <span style={{ fontSize: "18px", fontWeight: "500" }}>TODAY</span>

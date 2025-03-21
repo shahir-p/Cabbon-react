@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 
-const BottomNavigation = ({ height, width }) => {
+const CpBottom = ({ height, width }) => {
   const navigate = useNavigate();
   const location = useLocation(); // Get the current location to highlight the active tab
 
   const tabs = [
-    { id: 'boyshome', label: 'Home', icon: 'fa-solid fa-house', route: '/boys' },
-    { id: 'boysservice', label: 'Service', icon: 'fa-solid fa-bell-concierge', route: '/boys/service' },
-    { id: 'boyspayment', label: 'Payment', icon: 'fa-solid fa-credit-card', route: '/boys/payment' },
+    { id: 'boyshome', label: 'Home', icon: 'fa-solid fa-house', route: '/captain' },
+    { id: 'boysservice', label: 'Service', icon: 'fa-solid fa-bell-concierge', route: '/captain/service' },
+    { id: 'boyspayment', label: 'Payment', icon: 'fa-solid fa-credit-card', route: '/captain/payment' },
   ];
 
   // Highlight the tab based on the current route
@@ -58,4 +58,4 @@ const BottomNavigation = ({ height, width }) => {
   );
 };
 
-export default BottomNavigation;
+export default CpBottom;

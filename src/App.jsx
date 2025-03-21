@@ -8,25 +8,14 @@ import ServicePage from './Pages/ServicePage';
 import PaymentPage from './Pages/PaymentPage';
 import BottomNavigation from './Components/Bottomnavigation';
 import Login from './Pages/Login';
+import BcHome from './boysCaptain/BcHome';
+import BcBoys from './boysCaptain/BcBoys';
+import BcPayment from './boysCaptain/BcPayment';
+import Boysmodule from './Boysmodule';
+import Boyscaptainmodule from './Boyscaptainmodule';
+import Captainmodule from './Captainmodule';
+import Managermodule from './Managermodule';
 
-const AppLayout = ({ height, width, children }) => {
-  const location = useLocation();
-
-  // Check if the current path is "/login"
-  const isLoginPage = location.pathname === '/';
-
-  return (
-    <div>
-      {/* Conditionally render Appbar */}
-      {!isLoginPage && <Appbar height={height} width={width} />}
-
-      {children}
-
-      {/* Conditionally render BottomNavigation */}
-      {!isLoginPage && <BottomNavigation height={height} width={width} />}
-    </div>
-  );
-};
 
 const App = () => {
   const [height, setHeight] = useState(window.innerHeight);
@@ -52,14 +41,24 @@ const App = () => {
 
   return (
     <Router>
-      <AppLayout height={height} width={width}>
+    
         <Routes>
+          {/* General Routes */}
           <Route path="/" element={<Login height={height} width={width} />} />
-          <Route path="/home" element={<HomePage height={height} width={width} />} />
-          <Route path="/service" element={<ServicePage height={height} width={width} />} />
-          <Route path="/payment" element={<PaymentPage height={height} width={width} />} />
+
+          {/* User Module Routes */}
+          <Route path="/boys/*" element={<Boysmodule height={height} width={width}/>} />
+
+          {/* User Module Routes */}
+          <Route path="/boyscaptain/*" element={<Boyscaptainmodule height={height} width={width}/>} />
+
+          {/* Captain Module Routes */}
+          <Route path="/captain/*" element={<Captainmodule height={height} width={width}/>} />
+         
+          {/* Captain Module Routes */}
+          <Route path="/manager/*" element={<Managermodule height={height} width={width}/>} />
         </Routes>
-      </AppLayout>
+   
     </Router>
   );
 };
