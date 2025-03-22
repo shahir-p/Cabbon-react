@@ -15,6 +15,8 @@ import Boysmodule from './Boysmodule';
 import Boyscaptainmodule from './Boyscaptainmodule';
 import Captainmodule from './Captainmodule';
 import Managermodule from './Managermodule';
+import BcToday from './boysCaptain/BcToday';
+import BcTodayList from './boysCaptain/BcTodayList';
 
 
 const App = () => {
@@ -57,6 +59,10 @@ const App = () => {
          
           {/* Captain Module Routes */}
           <Route path="/manager/*" element={<Managermodule height={height} width={width}/>} />
+
+          <Route path="today" element={<BcToday height={height} width={width} />} />
+          
+          <Route path="/boyscaptain/todaylist" element={<BcTodayList height={height} width={width} />} />
         </Routes>
    
     </Router>

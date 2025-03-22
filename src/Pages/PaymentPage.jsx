@@ -1,7 +1,7 @@
 import React from 'react'
 import pendingbg from '../assets/pendingbg.png'
 import paidbg from '../assets/paidbg.png'
-import { Row } from 'react-bootstrap'
+
 
 
 const PaymentPage = ({ height, width }) => {
