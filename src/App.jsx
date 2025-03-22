@@ -17,6 +17,8 @@ import Captainmodule from './Captainmodule';
 import Managermodule from './Managermodule';
 import BcToday from './boysCaptain/BcToday';
 import BcTodayList from './boysCaptain/BcTodayList';
+import BcEventDetails from './boysCaptain/BcEventDetails';
+import BcFine from './boysCaptain/BcFine';
 
 
 const App = () => {
@@ -62,7 +64,11 @@ const App = () => {
 
           <Route path="today" element={<BcToday height={height} width={width} />} />
           
-          <Route path="/boyscaptain/todaylist" element={<BcTodayList height={height} width={width} />} />
+          <Route path="/boyscaptain/todaylist/boys" element={<BcTodayList height={height} width={width} />} />
+          
+          <Route path="/boyscaptain/todaylist" element={<BcEventDetails height={height} width={width} />} />
+          
+          <Route path="/boyscaptain/todaylist/fine" element={<BcFine height={height} width={width} />} />
         </Routes>
    
     </Router>

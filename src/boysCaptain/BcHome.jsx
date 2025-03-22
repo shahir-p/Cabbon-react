@@ -17,10 +17,10 @@ const BcHome = ({ height, width }) => {
     navigate('/today');
   };
 
-const [deleteshow, setDeleteShow] = useState(false);
+  const [deleteshow, setDeleteShow] = useState(false);
   const [show, setShow] = useState(false);
   const [backgroundImage, setBackgroundImage] = useState(
-    "https://img.freepik.com/free-photo/chef-with-his-arms-crossed-white-background_1368-2792.jpg?uid=R114668176&ga=GA1.1.1837137669.1726030558&semt=ais_hybrid"
+    "https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg?uid=R114668176&ga=GA1.1.1837137669.1726030558&semt=ais_keywords_boost"
   );
 
 
@@ -54,26 +54,26 @@ const [deleteshow, setDeleteShow] = useState(false);
 
         </div>
         <div className='d-flex'>
-        
-            <div        onClick={handleTodayClick}  className='today d-flex justify-content-center align-items-center ' style={{
-              height: `${height * 0.18}px`, width: `${width }px`, margin: "10px", borderRadius: "10px", border: "1px solid", padding: "10px",backgroundImage: `url("https://img.freepik.com/premium-photo/notebook-with-events-alarm-clock-two-tone_185193-45714.jpg?uid=R114668176&ga=GA1.1.1837137669.1726030558&semt=ais_keywords_boost")`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: "center"
-            }}
-            >
-            </div>
-         
-        
-       
-         
+
+          <div onClick={handleTodayClick} className='today d-flex justify-content-center align-items-center ' style={{
+            height: `${height * 0.18}px`, width: `${width}px`, margin: "10px", borderRadius: "10px", border: "1px solid", padding: "10px", backgroundImage: `url("https://img.freepik.com/premium-photo/notebook-with-events-alarm-clock-two-tone_185193-45714.jpg?uid=R114668176&ga=GA1.1.1837137669.1726030558&semt=ais_keywords_boost")`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: "center"
+          }}
+          >
+          </div>
+
+
+
+
         </div>
         <span style={{ marginLeft: "10px", fontSize: "18px", fontWeight: "500" }}>Overview</span>
-        <div onClick={handleShow} className='service ' style={{ height: `${height * 0.2}px`, margin: "10px", marginTop: "10px", borderRadius: "10px", border: "1px solid", padding: "10px", backgroundImage: `url(${boysbg})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: "right" }}>
-          <div className=''> <span style={{ fontSize: "18px", fontWeight: "500" }}>Boys <PlusCircle style={{color:"green"}}/></span>
+        <div onClick={handleShow} className='service ' style={{ height: `${height * 0.2}px`, margin: "10px", marginTop: "10px", borderRadius: "10px", border: "1px solid", padding: "10px", backgroundImage: `url(https://i.postimg.cc/4xCNpqQz/boysbg.png)`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: "right" }}>
+          <div className=''> <span style={{ fontSize: "18px", fontWeight: "500" }}>Boys <PlusCircle style={{ color: "green" }} /></span>
             <span style={{ color: "rgba(50, 168, 82)", fontSize: "16px", fontWeight: "500" }}></span>
           </div>
           <div className='d-flex justify-content-start mt-2'><span style={{ fontSize: "20px", fontWeight: "500" }}>25</span></div>
         </div>
 
-        <div className='Payment ' style={{ height: `${height * 0.2}px`, margin: "10px", marginTop: "10px", borderRadius: "10px", border: "1px solid", padding: "10px", backgroundImage: `url(${paymentbg})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: "right" }}>
+        <div className='Payment ' style={{ height: `${height * 0.2}px`, margin: "10px", marginTop: "10px", borderRadius: "10px", border: "1px solid", padding: "10px", backgroundImage: `url(https://i.postimg.cc/gJBGjT0L/paymentbg.png)`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: "right" }}>
           <div className=' d-flex justify-content-between'> <span style={{ fontSize: "18px", fontWeight: "500" }}>Payments</span>
             <span style={{ color: "rgba(50, 168, 82)", fontSize: "16px", fontWeight: "500" }}></span>
           </div>
@@ -206,7 +206,7 @@ const [deleteshow, setDeleteShow] = useState(false);
 
                     aria-label="Select Category"
                     style={{
-                      fontSize:"16px",
+                      fontSize: "16px",
                       borderRadius: "5px",
                       height: "35px",
                       width: `${width / 2 + 40}px`,
@@ -215,13 +215,16 @@ const [deleteshow, setDeleteShow] = useState(false);
                       border: "1px solid",
                     }}
 
-                   
+
                   >
-                   <option value="" hidden>Select</option>
+                    <option hidden value="">Select</option>
+                    
+                    <option value="captain">Captain</option>
+                    <option value="vicecaptain">Vice Captain</option>
                     <option value="agrade">A Grade</option>
                     <option value="bgrade">B Grade</option>
                     <option value="general">General</option>
-                    
+
                   </select>
                 </li>
                 <li>
@@ -236,23 +239,23 @@ const [deleteshow, setDeleteShow] = useState(false);
                       border: "1px solid",
                     }}
                     placeholder="00"
-                  
+
                   />
                 </li>
-                
+
 
               </ul>
             </div>
           </div>
         </Modal.Body>
         <Modal.Footer>
-         
+
           <Button variant="success">Add</Button>
         </Modal.Footer>
       </Modal>
 
       {/* Modal for Delete */}
-     
+
     </>
   )
 }

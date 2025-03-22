@@ -9,7 +9,7 @@ const PaymentPage = ({ height, width }) => {
   return (
     <div className='home d-flex flex-column ' style={{ width: `${width}px`, marginTop: `${height * 0.1 + 10}px`, padding: "10px 20px" }}>
       <h5>Payments</h5>
-      <div className='list d-flex flex-column justify-content-between align-items-center mb-2 ' style={{ height: `${height * 0.2}px`, width: `${width - 40}px`, border: "1px solid", borderRadius: "10px", fontSize: "15px", padding: "0px 20px", backgroundImage: `url(${pendingbg})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: "center" }} >
+      <div className='list d-flex flex-column justify-content-between align-items-center mb-2 ' style={{ height: `${height * 0.2}px`, width: `${width - 40}px`, border: "1px solid", borderRadius: "10px", fontSize: "15px", padding: "0px 20px", backgroundImage: `url(https://i.postimg.cc/1t4ZkrKm/pendingbg.png)`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: "center" }} >
         <div className='d-flex  justify-content-between mt-2' style={{ listStyle: 'none', padding: 0, margin: 0, width: `${width - 60}px` }}>
           <li>From : <span>01-02-2025</span></li>
           <li>To : <span>01-02-2025</span></li>
@@ -47,7 +47,7 @@ const PaymentPage = ({ height, width }) => {
           </div>
         </div>
       </div>
-      <div className='list d-flex flex-column justify-content-between align-items-center mb-2 ' style={{ height: `${height * 0.2}px`, width: `${width - 40}px`, border: "1px solid", borderRadius: "10px", fontSize: "15px", padding: "0px 20px", backgroundImage: `url(${paidbg})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: "center" }} >
+      <div className='list d-flex flex-column justify-content-between align-items-center mb-2 ' style={{ height: `${height * 0.2}px`, width: `${width - 40}px`, border: "1px solid", borderRadius: "10px", fontSize: "15px", padding: "0px 20px", backgroundImage: `url(https://i.postimg.cc/wTD349vW/paidbg.png)`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: "center" }} >
         <div className='d-flex  justify-content-between mt-2' style={{ listStyle: 'none', padding: 0, margin: 0, width: `${width - 60}px` }}>
           <li>From : <span>01-02-2025</span></li>
           <li>To : <span>01-02-2025</span></li>

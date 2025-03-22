@@ -6,8 +6,34 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 const BcAppbar = ({ height, width }) => {
-    const [show, setShow] = useState(false);
+    
     const [qrshow, setQRShow] = useState(false);
+
+     const [deleteshow, setDeleteShow] = useState(false);
+      const [show, setShow] = useState(false);
+      const [backgroundImage, setBackgroundImage] = useState(
+        "https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg?uid=R114668176&ga=GA1.1.1837137669.1726030558&semt=ais_keywords_boost"
+      );
+    
+      const deletehandleClose = () => setDeleteShow(false);
+      const deletehandleShow = () => setDeleteShow(true);
+      
+      const handleImageChange = (event) => {
+        const file = event.target.files[0];
+        if (file) {
+          if (file.size > 2 * 1024 * 1024) {
+            alert("File size must be less than 2MB.");
+            return;
+          }
+          const imageUrl = URL.createObjectURL(file);
+          setBackgroundImage(imageUrl);
+        }
+      };
+    
+      const triggerFileInput = () => {
+        document.getElementById("imageInput").click();
+      };
+    
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -57,8 +83,8 @@ const BcAppbar = ({ height, width }) => {
                     </div>
                 </div>
             </div>
-           
-            {/* for profile */}
+
+            {/* Modal for Details */}
             <Modal
                 show={show}
                 onHide={handleClose}
@@ -69,39 +95,122 @@ const BcAppbar = ({ height, width }) => {
                 <Modal.Header closeButton>
                     <Modal.Title>Profile</Modal.Title>
                 </Modal.Header>
-                <Modal.Body className='d-flex flex-column justify-content-center align-items-center'>
-                    <div style={{height:"100px",width:"100px",backgroundColor:"green", borderRadius:"10px" ,border:"1px solid",backgroundImage: `url(https://img.freepik.com/free-photo/chef-with-his-arms-crossed-white-background_1368-2792.jpg?uid=R114668176&ga=GA1.1.1837137669.1726030558&semt=ais_hybrid)`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: "center"}}>
-                    
-                    </div>
-                    <div className='d-flex ms-5 mt-3' >
-                       <div>
-                            <ul style={{ listStyle: 'none', padding: 0, margin: 0 ,fontSize:"18px",fontWeight:"400"}}>
-                                <li>Name </li>
-                                <li>C/O</li>
-                                <li>Mobile </li>
-                                
-                                <li>Place </li>
+                <Modal.Body className="d-flex flex-column justify-content-center align-items-center">
+                    <div
+                        onClick={triggerFileInput}
+                        style={{
+                            height: "100px",
+                            width: "100px",
+                            backgroundColor: "white",
+                            borderRadius: "10px",
+                            border: "1px solid",
+                            backgroundImage: `url(${backgroundImage})`,
+                            backgroundSize: "cover",
+                            backgroundRepeat: "no-repeat",
+                            backgroundPosition: "center",
+                        }}
+                    ></div>
+                    <input
+                        type="file"
+                        accept="image/*"
+                        id="imageInput"
+                        style={{ display: "none" }}
+                        onChange={handleImageChange}
+                    />
+                    <div className="d-flex mt-3">
+                        <div>
+                            <ul
+                                style={{
+                                    listStyle: "none",
+                                    padding: 0,
+                                    margin: 0,
+                                    fontSize: "18px",
+                                    fontWeight: "400",
+                                    lineHeight: "2.45",
+                                }}
+                            >
+                                <li>Name</li>
+                                <li>Mobile</li>
+                                <li>Email</li>
+                                <li>Place</li>
                             </ul>
-                       </div>
-                       <div className='ms-2'>
-                            <ul style={{ listStyle: 'none', padding: 0, margin: 0 ,fontSize:"18px",fontWeight:"400",}}>
-                                <li>: <span>Shahir</span> </li>
-                                <li>: <span>Fayis</span> </li>
-                                <li>: <span>9526718126</span> </li>
-                                
-                                <li>: <span>Karathur</span> </li>
+                        </div>
+                        <div className="ms-2">
+                            <ul
+                                style={{
+                                    listStyle: "none",
+                                    padding: 0,
+                                    margin: 0,
+                                    fontSize: "18px",
+                                    fontWeight: "400",
+                                }}
+                            >
+                                <li>
+                                    <input
+                                        type="text"
+                                        style={{
+                                            borderRadius: "5px",
+                                            height: "35px",
+                                            width: `${width / 2 + 40}px`,
+                                            paddingLeft: "5px",
+                                            marginBottom: "10px",
+                                            border: "1px solid",
+                                        }}
+                                        placeholder="Name"
+                                    />
+                                </li>
                                
+                                <li>
+                                    <input
+                                        type="text"
+                                        style={{
+                                            borderRadius: "5px",
+                                            height: "35px",
+                                            width: `${width / 2 + 40}px`,
+                                            paddingLeft: "5px",
+                                            marginBottom: "10px",
+                                            border: "1px solid",
+                                        }}
+                                        placeholder="Mobile"
+                                    />
+                                </li>
+                                <li>
+                                    <input
+                                        type="text"
+                                        style={{
+                                            borderRadius: "5px",
+                                            height: "35px",
+                                            width: `${width / 2 + 40}px`,
+                                            paddingLeft: "5px",
+                                            marginBottom: "10px",
+                                            border: "1px solid",
+                                        }}
+                                        placeholder="Email"
+                                    />
+                                </li>
+                                <li>
+                                    <input
+                                        type="text"
+                                        style={{
+                                            borderRadius: "5px",
+                                            height: "35px",
+                                            width: `${width / 2 + 40}px`,
+                                            paddingLeft: "5px",
+                                            marginBottom: "10px",
+                                            border: "1px solid",
+                                        }}
+                                        placeholder="Place"
+                                    />
+                                </li>
+                             
+
                             </ul>
-                       </div>
-
+                        </div>
                     </div>
-
-
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
-                        Close
-                    </Button>
+                    
+                    <Button variant="primary">Save</Button>
                 </Modal.Footer>
             </Modal>
 
