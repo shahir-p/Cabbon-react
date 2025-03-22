@@ -158,6 +158,8 @@ const BcBoys = ({ height, width }) => {
                 <li>Mobile</li>
                 <li>Email</li>
                 <li>Place</li>
+                <li>Grade</li>
+                <li>Wage</li>
                 <li>Works</li>
                 <li>Earnings</li>
               </ul>
@@ -244,6 +246,33 @@ const BcBoys = ({ height, width }) => {
                   />
                 </li>
                 <li>
+
+                  <select
+
+                    aria-label="Select Category"
+                    style={{
+                      fontSize:"16px",
+                      borderRadius: "5px",
+                      height: "35px",
+                      width: `${width / 2 + 40}px`,
+                      paddingLeft: "5px",
+                      marginBottom: "10px",
+                      border: "1px solid",
+                    }}
+
+                   
+                  >
+                   
+                    <option value="manager">Manager</option>
+                    <option value="captain">Captain</option>
+                    <option value="vicecaptain">Vice Captain</option>
+                    <option value="agrade">A Grade</option>
+                    <option value="bgrade">B Grade</option>
+                    <option value="general">General</option>
+                    <option value="boyscaptain">Boy's Captain</option>
+                  </select>
+                </li>
+                <li>
                   <input
                     type="text"
                     style={{
@@ -273,7 +302,22 @@ const BcBoys = ({ height, width }) => {
                     readOnly
                   />
                 </li>
-               
+                <li>
+                  <input
+                    type="text"
+                    style={{
+                      borderRadius: "5px",
+                      height: "35px",
+                      width: `${width / 2 + 40}px`,
+                      paddingLeft: "5px",
+                      marginBottom: "10px",
+                      border: "1px solid",
+                    }}
+                    placeholder="--"
+                    readOnly
+                  />
+                </li>
+
               </ul>
             </div>
           </div>
@@ -307,7 +351,7 @@ const BcBoys = ({ height, width }) => {
           Are you sure you want to delete name record?
         </Modal.Body>
         <Modal.Footer>
-          
+
           <Button variant="danger" >
             Delete
           </Button>
