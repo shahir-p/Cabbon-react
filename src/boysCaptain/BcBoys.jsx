@@ -60,7 +60,7 @@ const BcBoys = ({ height, width }) => {
               placeholder="Search"
               style={{
                 height: "35px",
-                width:`${width/2+20}px`,
+                width:`${width/2+40}px`,
                 borderRadius: "5px",
                 border: "1px solid",
                 paddingLeft: "10px",
@@ -153,13 +153,13 @@ const BcBoys = ({ height, width }) => {
             </div>
             <div className='ms-2'>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0, fontSize: "18px", fontWeight: "400", }}>
-                <li><input type="text" style={{ borderRadius: "5px", height: "35px", paddingLeft: "5px", paddingRight: "5px", marginBottom: "10px", border: "1px solid" }} placeholder='Name' /> </li>
-                <li><input type="text" style={{ borderRadius: "5px", height: "35px", paddingLeft: "5px", paddingRight: "5px", marginBottom: "10px", border: "1px solid" }} placeholder='UID' readOnly /> </li>
-                <li><input type="text" style={{ borderRadius: "5px", height: "35px", paddingLeft: "5px", paddingRight: "5px", marginBottom: "10px", border: "1px solid" }} placeholder='Mobile' /> </li>
-                <li><input type="text" style={{ borderRadius: "5px", height: "35px", paddingLeft: "5px", paddingRight: "5px", marginBottom: "10px", border: "1px solid" }} placeholder='Email' /> </li>
-                <li><input type="text" style={{ borderRadius: "5px", height: "35px", paddingLeft: "5px", paddingRight: "5px", marginBottom: "10px", border: "1px solid" }} placeholder='Place' /> </li>
-                <li><input type="text" style={{ borderRadius: "5px", height: "35px", paddingLeft: "5px", paddingRight: "5px", marginBottom: "10px", border: "1px solid" }} placeholder='--' readOnly /> </li>
-                <li><input type="text" style={{ borderRadius: "5px", height: "35px", paddingLeft: "5px", paddingRight: "5px", marginBottom: "10px", border: "1px solid" }} placeholder='--' readOnly /> </li>
+                <li><input type="text" style={{ borderRadius: "5px", height: "35px",width: `${width/2+40}px`,paddingLeft: "5px", paddingRight: "5px", marginBottom: "10px", border: "1px solid" }} placeholder='Name' /> </li>
+                <li><input type="text" style={{ borderRadius: "5px", height: "35px",width: `${width/2+40}px`, paddingLeft: "5px", paddingRight: "5px", marginBottom: "10px", border: "1px solid" }} placeholder='UID' readOnly /> </li>
+                <li><input type="text" style={{ borderRadius: "5px", height: "35px",width: `${width/2+40}px`, paddingLeft: "5px", paddingRight: "5px", marginBottom: "10px", border: "1px solid" }} placeholder='Mobile' /> </li>
+                <li><input type="text" style={{ borderRadius: "5px", height: "35px",width: `${width/2+40}px`, paddingLeft: "5px", paddingRight: "5px", marginBottom: "10px", border: "1px solid" }} placeholder='Email' /> </li>
+                <li><input type="text" style={{ borderRadius: "5px", height: "35px",width: `${width/2+40}px`, paddingLeft: "5px", paddingRight: "5px", marginBottom: "10px", border: "1px solid" }} placeholder='Place' /> </li>
+                <li><input type="text" style={{ borderRadius: "5px", height: "35px",width: `${width/2+40}px`, paddingLeft: "5px", paddingRight: "5px", marginBottom: "10px", border: "1px solid" }} placeholder='--' readOnly /> </li>
+                <li><input type="text" style={{ borderRadius: "5px", height: "35px",width: `${width/2+40}px`, paddingLeft: "5px", paddingRight: "5px", marginBottom: "10px", border: "1px solid" }} placeholder='--' readOnly /> </li>
 
 
 
