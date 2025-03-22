@@ -60,6 +60,7 @@ const BcBoys = ({ height, width }) => {
               placeholder="Search"
               style={{
                 height: "35px",
+                width:`${width/2+20}px`,
                 borderRadius: "5px",
                 border: "1px solid",
                 paddingLeft: "10px",
