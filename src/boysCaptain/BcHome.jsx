@@ -1,9 +1,7 @@
 
 import React from 'react'
 import { useState, useEffect } from 'react';
-import boysbg from '../assets/boysbg.png'
-import paymentbg from '../assets/paymentbg.png'
-import todaybg from '../assets/today bg.png'
+
 import { useNavigate } from 'react-router-dom';
 import { PlusCircle } from "lucide-react";
 import Button from "react-bootstrap/Button";
@@ -17,7 +15,7 @@ const BcHome = ({ height, width }) => {
     navigate('/today');
   };
 
-  const [deleteshow, setDeleteShow] = useState(false);
+
   const [show, setShow] = useState(false);
   const [backgroundImage, setBackgroundImage] = useState(
     "https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg?uid=R114668176&ga=GA1.1.1837137669.1726030558&semt=ais_keywords_boost"

@@ -1,14 +1,12 @@
 import { useState } from "react";
 import { Modal, Button, Card } from "react-bootstrap";
 import { PlusCircle } from "lucide-react";
-import servicebg from '../assets/service bg.png'
-import todaybg from '../assets/today bg.png'
-import paymentbg from '../assets/paymentbg.png'
-import { useNavigate } from "react-router-dom";
+
+
 
 const CreateEvent = ({ height, width }) => {
   const [show, setShow] = useState(false);
-  const navigate = useNavigate()
+
   const handleShow = () => setShow(true)
   const handleClose = () => setShow(false)
   
@@ -27,7 +25,7 @@ const CreateEvent = ({ height, width }) => {
         }}>
           <div className="d-flex gap-3 justify-content-between align-items-center">
             <span className="fw-semibold fs-5">Create a Event</span>
-            <PlusCircle className="text-success" size={24} />
+            <PlusCircle className="text-success" size={30} />
           </div>
         </div>
         <span style={{ marginLeft: "10px", fontSize: "18px", fontWeight: "500" }}>Overview</span>

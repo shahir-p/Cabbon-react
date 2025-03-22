@@ -1,7 +1,5 @@
 import React from 'react'
 import { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
 import { ChevronLeft } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import Badge from 'react-bootstrap/Badge';
@@ -28,10 +26,7 @@ const BcToday = ({ height, width }) => {
     };
 
 
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+   
     return (
         <>
          <BcAppbar height={height} width={width}/>

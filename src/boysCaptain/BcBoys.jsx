@@ -40,6 +40,7 @@ const BcBoys = ({ height, width }) => {
         style={{
           width: `${width}px`,
           marginTop: `${height * 0.1 + 10}px`,
+          marginBottom: `${height * 0.1 + 10}px`,
           padding: "10px 20px",
         }}
       >

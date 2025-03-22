@@ -7,16 +7,13 @@ import Modal from 'react-bootstrap/Modal';
 
 const BcAppbar = ({ height, width }) => {
     
-    const [qrshow, setQRShow] = useState(false);
-
-     const [deleteshow, setDeleteShow] = useState(false);
+  
       const [show, setShow] = useState(false);
       const [backgroundImage, setBackgroundImage] = useState(
         "https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg?uid=R114668176&ga=GA1.1.1837137669.1726030558&semt=ais_keywords_boost"
       );
     
-      const deletehandleClose = () => setDeleteShow(false);
-      const deletehandleShow = () => setDeleteShow(true);
+      
       
       const handleImageChange = (event) => {
         const file = event.target.files[0];
@@ -37,8 +34,7 @@ const BcAppbar = ({ height, width }) => {
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-    const qrhandleClose = () => setQRShow(false);
-    const qrhandleShow = () => setQRShow(true);
+ 
 
     return (
         <>

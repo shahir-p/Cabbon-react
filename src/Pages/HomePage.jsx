@@ -1,9 +1,5 @@
 import React from 'react'
-import { useState, useEffect } from 'react';
-import servicebg from '../assets/service bg.png'
-import paymentbg from '../assets/paymentbg.png'
-import todaybg from '../assets/today bg.png'
-import profile from '../assets/profile.png'
+
 
 
 

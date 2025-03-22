@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { useNavigate } from 'react-router-dom';
 import { ChevronLeft } from 'lucide-react';
+import BcAppbar from "./BcAppbar";
 
 const BcTodayList = ({ height, width }) => {
   const [deleteshow, setDeleteShow] = useState(false);
@@ -13,7 +14,7 @@ const BcTodayList = ({ height, width }) => {
   );
 
   const deletehandleClose = () => setDeleteShow(false);
-  const deletehandleShow = () => setDeleteShow(true);
+
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -25,21 +26,6 @@ const BcTodayList = ({ height, width }) => {
           navigate(-1);
       };
 
-  const handleImageChange = (event) => {
-    const file = event.target.files[0];
-    if (file) {
-      if (file.size > 2 * 1024 * 1024) {
-        alert("File size must be less than 2MB.");
-        return;
-      }
-      const imageUrl = URL.createObjectURL(file);
-      setBackgroundImage(imageUrl);
-    }
-  };
-
-  const triggerFileInput = () => {
-    document.getElementById("imageInput").click();
-  };
 
   const array = Array.from({ length: 11 }, (_, i) => i);
 
@@ -49,11 +35,12 @@ const BcTodayList = ({ height, width }) => {
 
   return (
     <>
+    <BcAppbar height={height} width={width}/>
       <div
         className="home d-flex flex-column"
         style={{
           width: `${width}px`,
-          marginTop: `${ 10}px`,
+          marginTop: `${height * 0.1 }px`,
           padding: "10px 20px",
         }}
       >
@@ -139,7 +126,7 @@ const BcTodayList = ({ height, width }) => {
         </Modal.Header>
         <Modal.Body className="d-flex flex-column justify-content-center align-items-center">
           <div
-            onClick={triggerFileInput}
+           
             style={{
               height: "100px",
               width: "100px",
