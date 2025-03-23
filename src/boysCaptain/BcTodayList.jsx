@@ -6,7 +6,6 @@ import { useNavigate } from 'react-router-dom';
 import { ChevronLeft } from 'lucide-react';
 import BcAppbar from "./BcAppbar";
 
-
 const BcEventBoys = ({ height, width }) => {
   const [deleteshow, setDeleteShow] = useState(false);
   const [show, setShow] = useState(false);

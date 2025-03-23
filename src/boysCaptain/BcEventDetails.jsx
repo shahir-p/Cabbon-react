@@ -1,5 +1,5 @@
 import React from 'react'
-import BcAppbar from './BcAppbar'
+
 import { ChevronLeft } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import boysbg from '../assets/boysbg.png'
@@ -22,7 +22,7 @@ const BcEventDetails = ({ height, width }) => {
     
   return (
    <>
-        <BcAppbar height={height} width={width}/>
+       
         <div className='home d-flex flex-column  ' style={{ width: `${width}px`,marginTop: `${height * 0.1 }px`, padding: "10px 20px" }}>
                 <div className='d-flex mb-3 mt-2'>
                     <ChevronLeft onClick={handleBackClick} />

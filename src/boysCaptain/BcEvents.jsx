@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { ChevronLeft } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import Badge from 'react-bootstrap/Badge';
-import BcAppbar from './BcAppbar';
+
 
 
 const BcEvents = ({ height, width }) => {
@@ -30,7 +30,7 @@ const BcEvents = ({ height, width }) => {
    
     return (
         <>
-         <BcAppbar height={height} width={width}/>
+        
             <div className='home d-flex flex-column  ' style={{ width: `${width}px`, marginTop: `${height * 0.1 }px`, padding: "10px 20px" }}>
                 <div className='d-flex mb-3 mt-2'>
                     <ChevronLeft onClick={handleBackClick} />
