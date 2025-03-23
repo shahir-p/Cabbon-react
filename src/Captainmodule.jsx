@@ -2,10 +2,11 @@ import React from 'react'
 
 import { Routes, Route } from 'react-router-dom';
 import CpAppbar from './captian/CpAppbar';
-import CpBottom from './Captian/CpBottom';
+
 import CreateEvent from './Captian/CreateEvent';
 import CaptianService from './Captian/CaptianService';
 import CaptainPayment from './Captian/CaptainPayment';
+import CpBottom from './Captian/CpBottom';
 
 
 const Captainmodule = ({ height, width }) => {
@@ -13,7 +14,7 @@ const Captainmodule = ({ height, width }) => {
     <>
       {/* Appbar and Bottom Navigation */}
       <CpAppbar height={height} width={width} />
-      <CpBottom height={height} width={width} />
+     <CpBottom height={height} width={width}/>
 
       {/* Define Routes */}
       <Routes>
