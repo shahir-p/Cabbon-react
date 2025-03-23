@@ -2,9 +2,10 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Appbar from './Boys/Appbar';
 import BottomNavigation from './Boys/Bottomnavigation';
-import HomePage from './Boys/HomePage';
-import ServicePage from './Boys/ServicePage';
 import PaymentPage from './Boys/PaymentPage';
+import ServicePage from './Boys/ServicePage';
+import HomePage from './Boys/HomePage';
+
 
 
 const Boysmodule = ({ height, width }) => {
@@ -23,6 +24,7 @@ const Boysmodule = ({ height, width }) => {
                 <Route path="service" element={<ServicePage height={height} width={width} />} />
                 <Route path="payment" element={<PaymentPage height={height} width={width} />} />
             </Routes>
+        
            
         </>
     );

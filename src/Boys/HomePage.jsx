@@ -38,6 +38,7 @@ const HomePage = ({ height, width }) => {
                 </div>
 
             </div>
+            
         </>
 
     )

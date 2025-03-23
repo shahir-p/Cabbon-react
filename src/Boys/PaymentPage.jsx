@@ -14,7 +14,7 @@ const PaymentPage = ({ height, width }) => {
           <li>To : <span>01-02-2025</span></li>
         </div>
         <div className=' pb-1 d-flex column-gap-1' style={{ height: `${height * 0.15}px`, width: `${width - 60}px` }}>
-          <div className=' d-flex column-gap-1' style={{ height: `${height * 0.15}px`, width: `${(width - 60) / 2}px`,paddingLeft:"10px" }} >
+          <div className=' d-flex column-gap-1' style={{ height: `${height * 0.15}px`, width: `${(width - 60) / 2}px`, paddingLeft: "10px" }} >
 
             <div style={{ height: `${height * 0.15}px`, width: `${((width - 60) / 2) / 2}px` }} >
               <div className='keys'>
@@ -24,6 +24,7 @@ const PaymentPage = ({ height, width }) => {
                   <li>Expense</li>
                   <li>Other</li>
                 </ul>
+             
               </div>
 
             </div>
@@ -38,11 +39,11 @@ const PaymentPage = ({ height, width }) => {
 
 
           </div>
-          <div className=' d-flex flex-column  p-2' style={{ height: `${height * 0.15}px`, width: `${(width - 60) / 2}px`}} >
-         <div className='border rounded border-secondary'>
-            <h4 style={{textAlign:"center",marginTop:"15px"}}>TOTAL</h4>
-            <h4 style={{textAlign:"center",marginTop:"5px"}}>2500</h4>
-         </div>
+          <div className=' d-flex flex-column  p-2' style={{ height: `${height * 0.15}px`, width: `${(width - 60) / 2}px` }} >
+            <div className='border rounded border-secondary'>
+              <h4 style={{ textAlign: "center", marginTop: "15px" }}>TOTAL</h4>
+              <h4 style={{ textAlign: "center", marginTop: "5px" }}>2500</h4>
+            </div>
           </div>
         </div>
       </div>
@@ -52,7 +53,7 @@ const PaymentPage = ({ height, width }) => {
           <li>To : <span>01-02-2025</span></li>
         </div>
         <div className=' pb-1 d-flex column-gap-1' style={{ height: `${height * 0.15}px`, width: `${width - 60}px` }}>
-          <div className=' d-flex column-gap-1' style={{ height: `${height * 0.15}px`, width: `${(width - 60) / 2}px`,paddingLeft:"10px" }} >
+          <div className=' d-flex column-gap-1' style={{ height: `${height * 0.15}px`, width: `${(width - 60) / 2}px`, paddingLeft: "10px" }} >
 
             <div style={{ height: `${height * 0.15}px`, width: `${((width - 60) / 2) / 2}px` }} >
               <div className='keys'>
@@ -76,11 +77,11 @@ const PaymentPage = ({ height, width }) => {
 
 
           </div>
-          <div className=' d-flex flex-column  p-2' style={{ height: `${height * 0.15}px`, width: `${(width - 60) / 2}px`}} >
-         <div className='border rounded border-secondary'>
-            <h4 style={{textAlign:"center",marginTop:"15px"}}>TOTAL</h4>
-            <h4 style={{textAlign:"center",marginTop:"5px"}}>2500</h4>
-         </div>
+          <div className=' d-flex flex-column  p-2' style={{ height: `${height * 0.15}px`, width: `${(width - 60) / 2}px` }} >
+            <div className='border rounded border-secondary'>
+              <h4 style={{ textAlign: "center", marginTop: "15px" }}>TOTAL</h4>
+              <h4 style={{ textAlign: "center", marginTop: "5px" }}>2500</h4>
+            </div>
           </div>
         </div>
       </div>

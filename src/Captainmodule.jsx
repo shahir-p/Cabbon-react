@@ -1,10 +1,11 @@
 import React from 'react'
-import CpAppbar from './Captian/CpAppbar'
-import CpBottom from './Captian/CpBottom'
-import CreateEvent from './Captian/CreateEvent'
-import CaptianService from './Captian/CaptianService'
-import CaptainPayment from './Captian/CaptainPayment'
+
 import { Routes, Route } from 'react-router-dom';
+import CpAppbar from './captian/CpAppbar';
+import CpBottom from './Captian/CpBottom';
+import CreateEvent from './Captian/CreateEvent';
+import CaptianService from './Captian/CaptianService';
+import CaptainPayment from './Captian/CaptainPayment';
 
 const Captainmodule = ({ height, width }) => {
   return (
@@ -22,6 +23,9 @@ const Captainmodule = ({ height, width }) => {
         <Route path="service" element={<CaptianService height={height} width={width} />} />
         <Route path="payment" element={<CaptainPayment height={height} width={width} />} />
       </Routes>
+    
+      
+      
     </>
   )
 }
