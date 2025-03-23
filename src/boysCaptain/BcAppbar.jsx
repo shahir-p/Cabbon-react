@@ -10,7 +10,7 @@ const BcAppbar = ({ height, width }) => {
   
       const [show, setShow] = useState(false);
       const [backgroundImage, setBackgroundImage] = useState(
-        "https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg?uid=R114668176&ga=GA1.1.1837137669.1726030558&semt=ais_keywords_boost"
+        "https://img.freepik.com/free-vector/user-circles-set_78370-4704.jpg?uid=R114668176&ga=GA1.1.1837137669.1726030558&semt=ais_hybrid"
       );
     
       
