@@ -1,18 +1,18 @@
   import React from 'react';
   import { Routes, Route } from 'react-router-dom';
-  import BcAppbar from './BoysCaptain/BcAppbar';
+ 
   import BcBotttom from './BoysCaptain/BcBottom';
   import BcHome from './BoysCaptain/BcHome';
   import BcBoys from './BoysCaptain/BcBoys';
   import BcPayment from './BoysCaptain/BcPayment';
   import BcPay from './BoysCaptain/BcPay';
-import BcToday from './BoysCaptain/BcEvents';
-import BcTodayList from './BoysCaptain/BcTodayList';
+
 import BcEventBoys from './BoysCaptain/BcTodayList';
 import BcEventDetails from './BoysCaptain/BcEventDetails';
 import BcFine from './BoysCaptain/BcFine';
 import BcEvents from './BoysCaptain/BcEvents';
 import BcPaymentDetails from './BoysCaptain/BcPaymentDetails';
+import BcAppbar from './BoysCaptain/BcAppbar';
 
 
   const Boyscaptainmodule = ({ height, width }) => {
