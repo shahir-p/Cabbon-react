@@ -89,7 +89,7 @@ const BcAppbar = ({ height, width }) => {
                 centered
             >
                 <Modal.Header closeButton>
-                    <Modal.Title>Profile</Modal.Title>
+                    <Modal.Title>Profil0</Modal.Title>
                 </Modal.Header>
                 <Modal.Body className="d-flex flex-column justify-content-center align-items-center">
                     <div
