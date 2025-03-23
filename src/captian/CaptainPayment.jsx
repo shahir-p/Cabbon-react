@@ -9,7 +9,7 @@ const CaptainPayment = ({ height, width }) => {
       <div className='list d-flex flex-column justify-content-between align-items-center mb-2 ' style={{ height: `${height * 0.2}px`, width: `${width - 40}px`, border: "1px solid", borderRadius: "10px", fontSize: "15px", padding: "0px 20px", backgroundImage: `url(https://i.postimg.cc/1t4ZkrKm/pendingbg.png)`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: "center" }} >
         <div className='d-flex  justify-content-between mt-2' style={{ listStyle: 'none', padding: 0, margin: 0, width: `${width - 60}px` }}>
           <li>From : <span>01-02-2025</span></li>
-          <li>To : <span>01-02-2025</span></li>
+          <li>To : <span>01-02-2026</span></li>
         </div>
         <div className=' pb-1 d-flex column-gap-1' style={{ height: `${height * 0.15}px`, width: `${width - 60}px` }}>
           <div className=' d-flex column-gap-1' style={{ height: `${height * 0.15}px`, width: `${(width - 60) / 2}px`,paddingLeft:"10px" }} >

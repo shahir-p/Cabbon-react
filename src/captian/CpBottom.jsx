@@ -35,7 +35,7 @@ const CpBottom = ({ height, width }) => {
         bottom: 0,
         backgroundColor: '#fff',
         boxShadow: '0px 0px 5px black',
-        zIndex: 1000,
+        zIndex: 999,
       }}
     >
       {tabs.map((tab) => (
