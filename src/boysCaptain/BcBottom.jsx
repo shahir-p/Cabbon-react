@@ -40,7 +40,7 @@ const BcBotttom = ({ height, width }) => {
           }}
           onClick={() => handleTabClick(tab.id, tab.route)}
         >
-          <i className={tab.icon} style={{ fontSize: '25px' }}></i>
+          <i className={tab.icon} style={{ fontSize: '24px' }}></i>
           <span style={{ fontSize: '12px' }}>{tab.label}</span>
         </div>
       ))}

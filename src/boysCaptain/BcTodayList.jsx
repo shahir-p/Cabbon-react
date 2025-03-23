@@ -174,7 +174,7 @@ const BcEventBoys = ({ height, width }) => {
                   lineHeight: "2.45",
                 }}
               >
-                <li>Name</li>
+                <li>: Name</li>
                 <li>UID</li>
                 <li>Mobile</li>
                 <li>Email</li>

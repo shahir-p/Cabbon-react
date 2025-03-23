@@ -34,7 +34,7 @@ const BcPaymentDetails = ({ height, width }) => {
                         <div className='d-flex flex-column' style={{ lineHeight: "1.7" }}>
                             <span> : Shahir </span>
                             <span>: Kainikkara  </span>
-                            <span>: 25 </span>
+                            <span>: 26 </span>
                             <span>: 14000 </span>
                         </div>
                     </div>

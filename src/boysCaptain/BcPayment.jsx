@@ -31,7 +31,7 @@ const BcPayment = ({ height, width }) => {
             <div style={{ height: `${height * 0.15}px`, width: `${((width - 60) / 2) / 2}px` }} >
               <ul style={{ listStyle: 'none', padding: 0, marginTop: "5px" }}>
                 <li>: 8</li>
-                <li>: 8</li>
+                <li>: 10</li>
                 <li>: 0</li>
                 <li>: 0</li>
                 <li>: 0</li>

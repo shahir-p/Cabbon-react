@@ -178,7 +178,7 @@ const BcFine = ({ height, width }) => {
                 }}
               >
                 <li>Name</li>
-                <li>UID</li>
+                <li> :UID</li>
                 <li>Mobile</li>
                 <li>Email</li>
                 <li>Place</li>

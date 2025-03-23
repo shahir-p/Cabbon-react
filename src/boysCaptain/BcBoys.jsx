@@ -271,7 +271,7 @@ const BcBoys = ({ height, width }) => {
                     <option value="agrade">A Grade</option>
                     <option value="bgrade">B Grade</option>
                     <option value="general">General</option>
-                    <option value="boyscaptain">Boy's Captain</option>
+                  
                   </select>
                 </li>
                 <li>
