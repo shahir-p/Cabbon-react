@@ -126,7 +126,7 @@ const BcAppbar = ({ height, width }) => {
                                 }}
                             >
                                 <li>Name</li>
-                                <li>Mobile</li>
+                                <li>Mobil</li>
                                 <li>Email</li>
                                 <li>Place</li>
                             </ul>

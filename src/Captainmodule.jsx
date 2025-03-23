@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Routes, Route } from 'react-router-dom';
-import CpAppbar from './captian/CpAppbar';
+
 
 
 
@@ -9,6 +9,7 @@ import CpBottom from './Captian/CpBottom';
 import CaptianService from './Captian/CaptianService';
 import CaptainPayment from './Captian/CaptainPayment';
 import CreateEvent from './Captian/CreateEvent';
+import CpAppbar from './Captian/CpAppbar';
 
 
 const Captainmodule = ({ height, width }) => {
