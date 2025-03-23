@@ -1,9 +1,9 @@
 import React from 'react'
-import CpAppbar from './captian/CpAppbar'
-import CpBottom from './captian/CpBottom'
-import CreateEvent from './captian/CreateEvent'
-import CaptianService from './captian/CaptianService'
-import CaptainPayment from './captian/CaptainPayment'
+import CpAppbar from './Captian/CpAppbar'
+import CpBottom from './Captian/CpBottom'
+import CreateEvent from './Captian/CreateEvent'
+import CaptianService from './Captian/CaptianService'
+import CaptainPayment from './Captian/CaptainPayment'
 import { Routes, Route } from 'react-router-dom';
 
 const Captainmodule = ({ height, width }) => {

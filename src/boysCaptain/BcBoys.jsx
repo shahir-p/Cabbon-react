@@ -92,6 +92,7 @@ const BcBoys = ({ height, width }) => {
               }}
               key={index}
               onClick={handleShow}
+              
             >
               <div
                 style={{
@@ -100,7 +101,7 @@ const BcBoys = ({ height, width }) => {
                   backgroundImage: `url(${backgroundImage})`,
                   backgroundSize: "cover",
                   backgroundRepeat: "no-repeat",
-                  backgroundPosition: "right",
+                  backgroundPosition: "top",
                 }}
               ></div>
               <h5 className="mt-2">Name</h5>

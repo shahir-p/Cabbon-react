@@ -13,11 +13,11 @@ const BcEventDetails = ({ height, width }) => {
           };
           const handleNavigation = (item) => {
             // Navigate to BcTodayList page and pass data (e.g., item details)
-            navigate('/boyscaptain/todaylist/boys', { state: { item } });
+            navigate('/boyscaptain/eventboys', { state: { item } });
         };
           const handlefine = (item) => {
             // Navigate to BcTodayList page and pass data (e.g., item details)
-            navigate('/boyscaptain/todaylist/fine', { state: { item } });
+            navigate('/boyscaptain/eventfine', { state: { item } });
         };
     
   return (

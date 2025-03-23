@@ -6,7 +6,8 @@ import { useNavigate } from 'react-router-dom';
 import { ChevronLeft } from 'lucide-react';
 import BcAppbar from "./BcAppbar";
 
-const BcTodayList = ({ height, width }) => {
+
+const BcEventBoys = ({ height, width }) => {
   const [deleteshow, setDeleteShow] = useState(false);
   const [show, setShow] = useState(false);
   const [backgroundImage, setBackgroundImage] = useState(
@@ -215,4 +216,4 @@ const BcTodayList = ({ height, width }) => {
   );
 };
 
-export default BcTodayList;
+export default BcEventBoys;

@@ -6,7 +6,7 @@ import Badge from 'react-bootstrap/Badge';
 import BcAppbar from './BcAppbar';
 
 
-const BcToday = ({ height, width }) => {
+const BcEvents = ({ height, width }) => {
 
     let Array = []
     for (let a = 0; a <= 10; a++) {
@@ -22,7 +22,8 @@ const BcToday = ({ height, width }) => {
 
     const handleNavigation = (item) => {
         // Navigate to BcTodayList page and pass data (e.g., item details)
-        navigate('/boyscaptain/todaylist', { state: { item } });
+        
+        navigate('/boyscaptain/eventdetails', { state: { item } });
     };
 
 
@@ -49,4 +50,4 @@ const BcToday = ({ height, width }) => {
     )
 }
 
-export default BcToday
+export default BcEvents

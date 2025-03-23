@@ -1,24 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { isMobile } from 'react-device-detect';
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
-
-import HomePage from './Pages/HomePage';
-import Appbar from './Components/Appbar';
-import ServicePage from './Pages/ServicePage';
-import PaymentPage from './Pages/PaymentPage';
-import BottomNavigation from './Components/Bottomnavigation';
-import Login from './Pages/Login';
-import BcHome from './boysCaptain/BcHome';
-import BcBoys from './boysCaptain/BcBoys';
-import BcPayment from './boysCaptain/BcPayment';
+import { BrowserRouter as Router, Route, Routes, useLocation, BrowserRouter } from 'react-router-dom';
 import Boysmodule from './Boysmodule';
 import Boyscaptainmodule from './Boyscaptainmodule';
 import Captainmodule from './Captainmodule';
 import Managermodule from './Managermodule';
-import BcToday from './boysCaptain/BcToday';
-import BcTodayList from './boysCaptain/BcTodayList';
-import BcEventDetails from './boysCaptain/BcEventDetails';
-import BcFine from './boysCaptain/BcFine';
+import Login from './Login';
+
 
 
 const App = () => {
@@ -44,7 +32,7 @@ const App = () => {
   }
 
   return (
-    <Router>
+    <BrowserRouter>
     
         <Routes>
           {/* General Routes */}
@@ -62,16 +50,12 @@ const App = () => {
           {/* Captain Module Routes */}
           <Route path="/manager/*" element={<Managermodule height={height} width={width}/>} />
 
-          <Route path="today" element={<BcToday height={height} width={width} />} />
-          
-          <Route path="/boyscaptain/todaylist/boys" element={<BcTodayList height={height} width={width} />} />
-          
-          <Route path="/boyscaptain/todaylist" element={<BcEventDetails height={height} width={width} />} />
-          
-          <Route path="/boyscaptain/todaylist/fine" element={<BcFine height={height} width={width} />} />
+        
+         
+        
         </Routes>
    
-    </Router>
+    </BrowserRouter>
   );
 };
 
