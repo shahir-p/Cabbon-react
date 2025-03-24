@@ -19,14 +19,14 @@ const BcFine = ({ height, width }) => {
   const handleShow = () => setShow(true);
 
 
-     const navigate = useNavigate()
-  
-      // Navigate back to the previous page
-      const handleBackClick = () => {
-          navigate(-1);
-      };
+  const navigate = useNavigate()
 
- 
+  // Navigate back to the previous page
+  const handleBackClick = () => {
+    navigate(-1);
+  };
+
+
 
 
 
@@ -38,21 +38,21 @@ const BcFine = ({ height, width }) => {
 
   return (
     <>
-   
+
       <div
         className="home d-flex flex-column"
         style={{
           width: `${width}px`,
-          marginTop: `${height * 0.1 }px`,
+          marginTop: `${height * 0.1}px`,
           padding: "10px 20px",
         }}
       >
         {/* Header Section */}
         <div className="d-flex justify-content-between align-items-center mb-3 mt-2">
-       <div className="d-flex">
+          <div className="d-flex">
             <ChevronLeft onClick={handleBackClick} />
-              <h5>Fine</h5>
-       </div>
+            <h5>Fine</h5>
+          </div>
           <div className="position-relative">
             <input
               type="text"
@@ -129,7 +129,7 @@ const BcFine = ({ height, width }) => {
         </Modal.Header>
         <Modal.Body className="d-flex flex-column justify-content-center align-items-center">
           <div
-          
+
             style={{
               height: "100px",
               width: "100px",
@@ -142,7 +142,7 @@ const BcFine = ({ height, width }) => {
               backgroundPosition: "center",
             }}
           ></div>
-       
+
           <div className="d-flex mt-3">
             <div>
               <ul
@@ -178,7 +178,7 @@ const BcFine = ({ height, width }) => {
                 }}
               >
                 <li>Name</li>
-                <li> :UID</li>
+                <li>UID</li>
                 <li>Mobile</li>
                 <li>Email</li>
                 <li>Place</li>
@@ -190,7 +190,7 @@ const BcFine = ({ height, width }) => {
             </div>
           </div>
         </Modal.Body>
-       
+
       </Modal>
 
       {/* Modal for Delete */}
